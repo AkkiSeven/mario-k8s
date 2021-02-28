@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mario-deployment
+  name: cssgame-deployment
   labels:
-    app: mario
+    app: cssgame
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mario
+      app: cssgame
   template:
     metadata:
       labels:
-        app: mario
+        app: cssgame
     spec:
       containers:
-        - name: mario
-          image: pengbai/docker-supermario
+        - name: cssgame
+          image: akkiseven/css-stack-game:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 80

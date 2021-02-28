@@ -1,2 +1,3 @@
-# mario-k8s
-Mario game using k8s and docker image.
+# cssgame-k8s
+
+cssgame game using k8s and docker image.
